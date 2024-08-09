@@ -1,0 +1,7 @@
+Flask
+tensorflow
+numpy
+opencv-python
+Pillow
+Keras
+git+https://github.com/keras-team/keras-contrib.git
