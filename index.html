@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Image Translation</title>
+</head>
+<body>
+    <h1>Upload Sketch Image</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    {% if uploaded_image and generated_image %}
+        <h2>Uploaded Image:</h2>
+        <img src="{{ uploaded_image }}" alt="Uploaded Image">
+        <h2>Generated Image:</h2>
+        <img src="{{ generated_image }}" alt="Generated Image">
+    {% endif %}
+</body>
+</html>
